@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color:cornflowerblue;
+  width: 100%;
+  margin: 40px;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#parola-inserire,
+#output1 {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 3px 5px;
+}
