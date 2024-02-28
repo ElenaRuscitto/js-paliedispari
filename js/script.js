@@ -11,18 +11,45 @@ btn.addEventListener('click', function(){
   palindroma (parolaInserita);
 })
 
+// METODO A: charAt
+// function palindroma(word) {
 
+//     for (let i = word.length; i > 0; i-- ) {
+        
+//         if (word[i] = word.charAt(word.length)-1 ){
+//             // stampo la risposta se è vera
+//             document.getElementById('output1').innerHTML = 'La parola che hai inserito è palindroma';
+
+//         } else{
+
+//           document.getElementById('output1').innerHTML = 'La parola che hai inserito NON è palindroma';
+//         }
+//     }
+// }
+
+
+
+
+
+// METODO B: KISS
 function palindroma(word) {
 
-    for( let i = word.length; i > 0; i-- ) {
+  // divido la parola scritta dall'utente viene divisa / 2, in caso viene arrotondata per eccesso
+  const lunghezzaParola = Math.floor(word.length / 2);
 
-        if( word[i] = word.charAt(word.length)-1 ){
+    for (var i = 0; i < lunghezzaParola; i++) {
 
-            document.getElementById('output1').innerHTML = 'La parola che hai inserito è palindroma';
+       if (word[i] !== word[word.length - i - 1]) {
 
-        } else{
+        // stampo la risposta 
+        document.getElementById('output1').innerHTML = 'La parola che hai inserito NON è palindroma';
 
-          document.getElementById('output1').innerHTML = 'La parola che hai inserito NON è palindroma';
-        }
-    }
+      } else {
+       // stampo la risposta 
+        document.getElementById('output1').innerHTML = 'La parola che hai inserito è palindroma';
+      }
+    } 
 }
+
+
+

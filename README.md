@@ -18,3 +18,7 @@ Dichiariamo chi ha vinto.
   - dividiamo la lunghezza della parola inserita / 2
   - se le due metà sono uguali = output che è palindroma
   se le due metà NON sono uguali = output che NON è palindroma
+
+
+- PARI E DISPARI:
+
