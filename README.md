@@ -16,3 +16,5 @@ Dichiariamo chi ha vinto.
 1. Prompt utente per inserimento di una parola
 2. function: per capire se parola è palindroma:
   - dividiamo la lunghezza della parola inserita / 2
+  - se le due metà sono uguali = output che è palindroma
+  se le due metà NON sono uguali = output che NON è palindroma
