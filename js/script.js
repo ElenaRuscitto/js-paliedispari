@@ -66,13 +66,23 @@ btn2.addEventListener('click', function() {
   const pc = numeriRandom();
   const sommaCalcolata = pc + numberUserValue;
 
-  document.getElementById('numero-pc').innerHTML = `il computer ha giocato il numero: ` + pc;
-  document.getElementById('output2').innerHTML = sommaCalcolata;
-  const output3 =  document.getElementById('output3');
+
+  if((numberUserValue < 1) || (numberUserValue > 5)){
+    alert('Attenzione!! il numero inserito non è valido');
+
+  } else {
 
 
-  esito(sommaCalcolata, pariDispariUtenteValue, output3);
+    document.getElementById('numero-pc').innerHTML = `il computer ha giocato il numero: ` + pc;
+    document.getElementById('output2').innerHTML = sommaCalcolata;
+    const output3 =  document.getElementById('output3');
+  
+  
+    esito(sommaCalcolata, pariDispariUtenteValue, output3);
+  
+  }
 
+ 
   console.log(sommaCalcolata);
 }) 
 
