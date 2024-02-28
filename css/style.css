@@ -14,10 +14,20 @@
 }
 
 #parola-inserire,
-#output1 {
+#output1,
+.form-select,
+.somma-numeri,
+#numero-utente,
+.btn2 {
   margin-top: 20px;
 }
 
 .btn {
   padding: 3px 5px;
+  background-color: aliceblue;
+}
+
+.form-select {
+  width: 300px;
+  margin: 0 auto;
 }

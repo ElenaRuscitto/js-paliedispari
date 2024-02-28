@@ -52,4 +52,55 @@ function palindroma(word) {
 }
 
 
+///////////// GIOCO PARI E DISPARI ///////////////////////////////////////////////////////////////
+const pariDispariUtente = document.getElementById('pariDispariUtente');
+const numberUser = document.getElementById('numero-utente');
+const btn2 = document.querySelector('.btn2');
+
+
+
+btn2.addEventListener('click', function() {
+
+  const numberUserValue = parseInt(numberUser.value);
+  const pariDispariUtenteValue = pariDispariUtente.value;
+  const pc = numeriRandom();
+  const sommaCalcolata = pc + numberUserValue;
+
+  document.getElementById('numero-pc').innerHTML = `il computer ha giocato il numero: ` + pc;
+  document.getElementById('output2').innerHTML = sommaCalcolata;
+  const output3 =  document.getElementById('output3');
+
+
+  esito(sommaCalcolata, pariDispariUtenteValue, output3);
+
+  console.log(sommaCalcolata);
+}) 
+
+
+
+function numeriRandom () {
+  const numRandom = Math.ceil(Math.random() * 5); 
+
+  console.log(numRandom);
+  return numRandom
+
+}
+
+
+
+function esito(sommaC, pduv, out ) {
+
+  if(sommaC % 2 === 0 && pduv === 'pari'){
+    out.innerHTML = 'Vince il giocatore'
+
+  }else if(sommaC % 2 !== 0 && pduv === 'dispari'){
+    out.innerHTML = 'Vince il giocatore'
+
+  }else{
+    out.innerHTML = 'Vince il pc'
+  }
+}
+
+
+
 

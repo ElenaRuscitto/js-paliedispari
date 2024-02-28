@@ -21,4 +21,8 @@ Dichiariamo chi ha vinto.
 
 
 - PARI E DISPARI:
-
+1. l'utente tramite option sceglie se essere pari o dispari
+2. l'utente tramite input inserisce un numero da 1 a 5
+3. estraiamo un numero random da 1 a 5 per il PC (usando una funzione)
+4. sommiamo i risultati dell'utente e del pc 
+5. output con il vincitore
